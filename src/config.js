@@ -140,6 +140,8 @@ export const runtimeConfig =
         LEMMY: window?.env?.LEMMY,
         PIXELFED: window?.env?.PIXELFED,
         VRCHAT: window?.env?.VRCHAT,
+        SHOPEE_SG: window?.env?.SHOPEE_SG,
+        LAZADA_SG: window?.env?.LAZADA_SG,
       }
     : {
         // server
@@ -505,4 +507,10 @@ export const runtimeConfig =
         VRCHAT: nodeIsProduction
           ? process.env.VRCHAT
           : process.env.RAZZLE_VRCHAT,
+        SHOPEE_SG: nodeIsProduction
+          ? process.env.SHOPEE_SG
+          : process.env.RAZZLE_SHOPEE_SG,
+        LAZADA_SG: nodeIsProduction
+          ? process.env.LAZADA_SG
+          : process.env.RAZZLE_LAZADA_SG,
       };

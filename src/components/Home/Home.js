@@ -88,6 +88,8 @@ import threadsLogo from '../../icons/threads.svg';
 import lemmyLogo from '../../icons/lemmy.svg';
 import pixelfedLogo from '../../icons/pixelfed.svg';
 import vrchatLogo from '../../icons/vrchat.svg';
+import shopeesgLogo from '../../icons/shopee.svg';
+import lazadasgLogo from '../../icons/lazada.svg';
 
 function Home(props) {
   let order = [];
@@ -927,6 +929,24 @@ function Home(props) {
                   displayName="VRChat"
                   logo={vrchatLogo}
                   order={buttonOrder('VRCHAT')}
+                />
+              )}
+              {runtimeConfig.SHOPEE_SG && (
+                <Button
+                  name="shopee"
+                  href={runtimeConfig.SHOPEE_SG}
+                  displayName="Shopee"
+                  logo={shopeesgLogo}
+                  order={buttonOrder('SHOPEE_SG')}
+                />
+              )}
+              {runtimeConfig.LAZADA_SG && (
+                <Button
+                  name="lazada"
+                  href={runtimeConfig.LAZADA_SG}
+                  displayName="Lazada"
+                  logo={lazadasgLogo}
+                  order={buttonOrder('LAZADA_SG')}
                 />
               )}
             </Sort>
