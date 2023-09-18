@@ -154,8 +154,10 @@ function Home(props) {
               srcSet={runtimeConfig.AVATAR_2X_URL}
               alt={runtimeConfig.AVATAR_ALT}
             />
-            <h1>{`${runtimeConfig.NAME}`}</h1>
-            <p>{runtimeConfig.BIO}</p>
+            <h1>{}</h1> 
+            <p>{}</p>
+            {/* <h1>{`${runtimeConfig.NAME}`}</h1> */}
+            {/* <p>{runtimeConfig.BIO}</p> */}
             <Sort>
               {runtimeConfig.CUSTOM_BUTTON_TEXT && renderCustomButtons()}
               {runtimeConfig.YOUTUBE && (

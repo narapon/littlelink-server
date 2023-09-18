@@ -81,6 +81,18 @@ button {
   background-color: #1877f2;
 }
 
+/* Shopee SG */
+.button.button-shopee {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* Lazada SG */
+.button.button-lazada {
+  color: #ffffff;
+  background-color: #000000;
+}
+
 /* Facebook Messenger */
 .button.button-facebookmessenger {
   color: #ffffff;
