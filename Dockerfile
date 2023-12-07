@@ -14,6 +14,8 @@ ENV NODE_ENV production
 RUN mkdir -p /node_modules
 COPY --from=node-build /usr/src/app/build ./build
 COPY --from=node-build /usr/src/app/node_modules_prod ./node_modules
+COPY link-logo.png /usr/src/app/build/public/static/media/
+COPY favicon-logo.png /usr/src/app/build/public/static/media/
 EXPOSE 3000
 CMD [ "node", "build/server.js" ]
 
