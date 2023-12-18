@@ -81,6 +81,12 @@ button {
   background-color: #1877f2;
 }
 
+/* Teaveas SG */
+.button.button-teaveas {
+  color: #ffffff;
+  background-color: #767676;
+}
+
 /* Shopee SG */
 .button.button-shopee {
   color: #ffffff;

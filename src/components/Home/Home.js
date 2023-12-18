@@ -90,6 +90,7 @@ import pixelfedLogo from '../../icons/pixelfed.svg';
 import vrchatLogo from '../../icons/vrchat.svg';
 import shopeesgLogo from '../../icons/shopee.svg';
 import lazadasgLogo from '../../icons/lazada.svg';
+import teaveassgLogo from '../../icons/teaveas_red.svg';
 
 function Home(props) {
   let order = [];
@@ -931,6 +932,15 @@ function Home(props) {
                   displayName="VRChat"
                   logo={vrchatLogo}
                   order={buttonOrder('VRCHAT')}
+                />
+              )}
+              {runtimeConfig.TEAVEAS_SG && (
+                <Button
+                  name="teaveas"
+                  href={runtimeConfig.TEAVEAS_SG}
+                  displayName="Website (coming soon...)"
+                  logo={teaveassgLogo}
+                  order={buttonOrder('TEAVEAS_SG')}
                 />
               )}
               {runtimeConfig.SHOPEE_SG && (

@@ -142,6 +142,7 @@ export const runtimeConfig =
         VRCHAT: window?.env?.VRCHAT,
         SHOPEE_SG: window?.env?.SHOPEE_SG,
         LAZADA_SG: window?.env?.LAZADA_SG,
+        TEAVEAS_SG: window?.env?.TEAVEAS_SG,
       }
     : {
         // server
@@ -507,6 +508,9 @@ export const runtimeConfig =
         VRCHAT: nodeIsProduction
           ? process.env.VRCHAT
           : process.env.RAZZLE_VRCHAT,
+        TEAVEAS_SG: nodeIsProduction
+          ? process.env.TEAVEAS_SG
+          : process.env.RAZZLE_TEAVEAS_SG,
         SHOPEE_SG: nodeIsProduction
           ? process.env.SHOPEE_SG
           : process.env.RAZZLE_SHOPEE_SG,
