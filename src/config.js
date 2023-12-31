@@ -141,7 +141,9 @@ export const runtimeConfig =
         PIXELFED: window?.env?.PIXELFED,
         VRCHAT: window?.env?.VRCHAT,
         SHOPEE_SG: window?.env?.SHOPEE_SG,
+        SHOPEE_SG_TEXT: window?.env?.SHOPEE_SG_TEXT,
         LAZADA_SG: window?.env?.LAZADA_SG,
+        LAZADA_SG_TEXT: window?.env?.LAZADA_SG_TEXT,
         TEAVEAS_SG: window?.env?.TEAVEAS_SG,
       }
     : {
@@ -514,7 +516,13 @@ export const runtimeConfig =
         SHOPEE_SG: nodeIsProduction
           ? process.env.SHOPEE_SG
           : process.env.RAZZLE_SHOPEE_SG,
+        SHOPEE_SG_TEXT: nodeIsProduction
+          ? process.env.SHOPEE_SG_TEXT
+          : process.env.RAZZLE_SHOPEE_SG_TEXT,
         LAZADA_SG: nodeIsProduction
           ? process.env.LAZADA_SG
           : process.env.RAZZLE_LAZADA_SG,
+        LAZADA_SG_TEXT: nodeIsProduction
+          ? process.env.LAZADA_SG_TEXT
+          : process.env.RAZZLE_LAZADA_SG_TEXT,
       };

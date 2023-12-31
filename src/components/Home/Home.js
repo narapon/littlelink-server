@@ -938,7 +938,7 @@ function Home(props) {
                 <Button
                   name="teaveas"
                   href={runtimeConfig.TEAVEAS_SG}
-                  displayName="Website (coming soon...)"
+                  displayName="Website"
                   logo={teaveassgLogo}
                   order={buttonOrder('TEAVEAS_SG')}
                 />
@@ -947,7 +947,7 @@ function Home(props) {
                 <Button
                   name="shopee"
                   href={runtimeConfig.SHOPEE_SG}
-                  displayName="Shopee"
+                  displayName={runtimeConfig.SHOPEE_SG_TEXT}
                   logo={shopeesgLogo}
                   order={buttonOrder('SHOPEE_SG')}
                 />
@@ -956,7 +956,7 @@ function Home(props) {
                 <Button
                   name="lazada"
                   href={runtimeConfig.LAZADA_SG}
-                  displayName="Lazada"
+                  displayName={runtimeConfig.LAZADA_SG_TEXT}
                   logo={lazadasgLogo}
                   order={buttonOrder('LAZADA_SG')}
                 />
